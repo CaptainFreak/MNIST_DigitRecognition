@@ -52,4 +52,4 @@ predictions = model.predict_classes(test_images, verbose=0)
 #saving predictions
 submissions=pd.DataFrame({"ImageId": list(range(1,len(predictions)+1)),
                          "Label": predictions})
-submissions.to_csv("DR.csv", index=False, header=True)
+submissions.to_csv("predictions.csv", index=False, header=True)

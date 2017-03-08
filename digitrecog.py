@@ -12,6 +12,7 @@ from keras.optimizers import Adam ,RMSprop
 from sklearn.model_selection import train_test_split
 
 #loading data
+''' "train.csv" and "test.csv" contain standard MNIST digit data (https://www.kaggle.com/c/digit-recognizer/data) ''' 
 train = pd.read_csv("train.csv")
 test_images = (pd.read_csv("test.csv").values).astype('float32')	
 train_images = (train.ix[:,1:].values).astype('float32')
